@@ -1,40 +1,22 @@
 <script setup>
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Falta de informação confiável",
     description:
-      "Build your site using Vue, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Pessoas com mobilidade reduzida enfrentam a ausência de dados precisos sobre acessibilidade urbana.",
+    icon: "bx:bxs-error-circle",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Aplicativos que ignoram barreiras reais",
     description:
-      "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Muitos apps de navegação não consideram calçadas quebradas, rampas inexistentes ou banheiros adaptados.",
+    icon: "bx:bxs-map-alt",
   },
   {
-    title: "On-Demand Components",
+    title: "Insegurança e perda de autonomia",
     description:
-      "Need some JS? Nuxt can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
-  },
-  {
-    title: "Broad Integration",
-    description:
-      "Nuxt supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
-  },
-  {
-    title: "SEO Enabled",
-    description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Nuxt is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Sem saber se o caminho é acessível, a pessoa evita sair, gerando ansiedade e isolamento.",
+    icon: "bx:bxs-low-vision",
   },
 ];
 </script>
@@ -42,11 +24,10 @@ const features = [
 <template>
   <div class="mt-16 md:mt-0">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Everything you need to start a website
+      Problema & Como resolvemos
     </h2>
     <p class="text-lg mt-4 text-slate-600">
-      Nuxt comes batteries included. It takes the best parts of state-of-the-art
-      tools and adds its own innovations.
+      Pessoas com mobilidade reduzida enfrentam diariamente a falta de informações confiáveis sobre acessibilidade urbana. A inclusiva360 transforma essa realidade com tecnologia colaborativa, unindo dados e comunidade para criar rotas verdadeiramente acessíveis.
     </p>
   </div>
 

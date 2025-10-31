@@ -7,13 +7,14 @@
 
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
-        INCLUSIVA360
+        <span class="text-[#00ADEF]">inclusiva</span><span class="font-bold text-[#00A54F]">360</span>
       </h1>
       <h1 class="text-5xl lg:text-6xl xl:text-4xl">
         Mobilidade com dignidade, acessibilidade com inteligência.
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        App colaborativo para pessoas com mobilidade reduzida e redes de apoio: encontre rotas acessíveis e registre barreiras em tempo real.
+        Aplicativo colaborativo para pessoas com mobilidade reduzida e redes de apoio. Descubra rotas acessíveis,
+        registre barreiras urbanas em tempo real e ajude a construir cidades mais inclusivas.
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink href="/contact" rel="noopener">Quero colaborar
