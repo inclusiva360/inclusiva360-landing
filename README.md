@@ -2,13 +2,13 @@
 
 Landing Page for Inclusiva360. Used for marketing, user acquisition, and initial communication.
 
-# Nuxt Minimal Starter
+## Built with Nuxt 4 Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Look at the [Nuxt 4 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
-Make sure to install dependencies:
+Make sure to install the dependencies:
 
 ```bash
 # npm
@@ -33,7 +33,7 @@ Start the development server on `http://localhost:3000`:
 npm run dev
 
 # pnpm
-pnpm dev
+pnpm run dev
 
 # yarn
 yarn dev
@@ -51,7 +51,7 @@ Build the application for production:
 npm run build
 
 # pnpm
-pnpm build
+pnpm run build
 
 # yarn
 yarn build
@@ -67,7 +67,7 @@ Locally preview production build:
 npm run preview
 
 # pnpm
-pnpm preview
+pnpm run preview
 
 # yarn
 yarn preview
@@ -77,3 +77,9 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Attributions
+
+Original Astroship Template: **[https://astroship.web3templates.com/](https://astroship.web3templates.com/)** from **[Web3Templates](https://web3templates.com/)**
+
+Forked from: **[https://github.com/surjithctly/astroship](https://github.com/surjithctly/astroship)**
