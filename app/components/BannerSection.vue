@@ -11,30 +11,28 @@
           ACESSIBILIDADE COM INTELIGÊNCIA.
         </h1>
         <p class="text-gray-600 mb-6 text-sm leading-relaxed">
-          Nós conectamos pessoas com mobilidade reduzida a rotas acessíveis e seguras, transformando a maneira
-          como
-          interagem com o espaço urbano.
+          App colaborativo para pessoas com mobilidade reduzida e redes de apoio: Encontre rotas acessíveis e registre barreiras em tempo real.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 items-start">
           <button class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:opacity-90">
             Seja um Parceiro!
           </button>
-          <div
-            class="bg-brand-yellow text-blue-900 px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2 cursor-pointer shadow">
-            Saiba Mais ⬇
-          </div>
         </div>
       </div>
 
       <div class="hidden md:flex justify-center">
-        <div
-          class="w-80 h-80 bg-white rounded-full flex items-center justify-center shadow-2xl border-4 border-gray-100">
-          <div class="text-center">
-            <div class="text-6xl mb-2">♿</div>
-            <div class="text-2xl font-bold text-blue-500">inclusiva<span class="text-brand-green">360</span>
-            </div>
-          </div>
+        <div class="w-[32rem] h-[32rem] bg-white rounded-full flex items-center justify-center">
+          <img src="~/assets/images/inclusiva360-logo-centered.png" alt="Logo Inclusiva360"
+            class="w-[22rem] h-[22rem] object-contain" />
         </div>
+      </div>
+    </div> <!-- Fecha o container grid -->
+
+    <!-- Botão fora do grid, agora centralizado -->
+    <div class="container mx-auto px-4 relative z-10 mt-8 flex justify-center pt-6">
+      <div
+        class="bg-brand-yellow text-black-900 px-8 py-6 rounded-full font-bold text-xl flex items-center justify-center gap-2 cursor-pointer shadow hover:bg-yellow-500 transition-colors">
+        Saiba Mais <Icon name="fluent:arrow-down-12-filled" class="text-2xl" />
       </div>
     </div>
   </section>
