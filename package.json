@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "inclusiva360-landing",
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,14 +9,12 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "dependencies": {
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "autoprefixer": "^10.4.16",
-    "nuxt": "^3.9.0",
-    "nuxt-icon": "^0.6.8",
-    "postcss": "^8.4.32",
-    "tailwindcss": "^3.4.0",
-    "vue": "^3.4.3",
-    "vue-router": "^4.2.5"
+    "@nuxtjs/tailwindcss": "^6.14.0"
   }
 }
