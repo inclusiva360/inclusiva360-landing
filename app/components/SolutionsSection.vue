@@ -1,7 +1,7 @@
 <template>
-    <section class="py-16 bg-white">
+    <section id="solutions" class="py-16 bg-white">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-6xl font-bold mb-12">
+            <h2 class="text-4xl md:text-6xl font-bold mb-12">
                 SOLUÇÕES DA <span class="text-blue-500">inclusiva</span><span class="text-brand-green">360</span>
             </h2>
 
@@ -9,8 +9,8 @@
                 <!-- Card 1 -->
                 <div class="border rounded-xl p-8 shadow-sm hover:shadow-md transition bg-white cursor-pointer hover:bg-gray-50"
                     @click="openModal(1)">
-                    <div class="text-blue-900 text-5xl mb-4 flex justify-center">
-                        <Icon name="bi:person-x-fill" class="text-[112px]" />
+                    <div class="text-blue-900 text-4xl md:text-5xl mb-4 flex justify-center">
+                        <Icon name="bi:person-x-fill" class="text-6xl md:text-[112px]" />
                     </div>
                     <p class="text-gray-600 font-medium">
                         Pessoas com mobilidade reduzida não têm informações confiáveis sobre acessibilidade urbana.
@@ -20,8 +20,8 @@
                 <!-- Card 2 -->
                 <div class="border rounded-xl p-8 shadow-sm hover:shadow-md transition bg-white cursor-pointer hover:bg-gray-50"
                     @click="openModal(2)">
-                    <div class="text-blue-900 text-5xl mb-4 flex justify-center">
-                        <Icon name="weui:eyes-off-filled" class="text-[112px]" />
+                    <div class="text-blue-900 text-4xl md:text-5xl mb-4 flex justify-center">
+                        <Icon name="weui:eyes-off-filled" class="text-6xl md:text-[112px]" />
                     </div>
                     <p class="text-gray-600 font-medium">
                         Apps que ignoram barreiras do mundo real.
@@ -31,8 +31,8 @@
                 <!-- Card 3 -->
                 <div class="border rounded-xl p-8 shadow-sm hover:shadow-md transition bg-white cursor-pointer hover:bg-gray-50"
                     @click="openModal(3)">
-                    <div class="text-blue-900 text-5xl mb-4 flex justify-center">
-                        <Icon name="oi:thumb-down" class="text-[112px]" />
+                    <div class="text-blue-900 text-4xl md:text-5xl mb-4 flex justify-center">
+                        <Icon name="oi:thumb-down" class="text-6xl md:text-[112px]" />
                     </div>
                     <p class="text-gray-600 font-medium">
                         A insegurança de não saber se há acessibilidade gera ansiedade e limita a autonomia.

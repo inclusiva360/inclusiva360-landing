@@ -1,7 +1,7 @@
 <template>
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold text-center text-black mb-12">AVALIAÇÕES</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-black mb-12">AVALIAÇÕES</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-4">
                     <div class="text-brand-yellow flex mb-2">★★★★★</div>

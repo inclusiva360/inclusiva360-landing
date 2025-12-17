@@ -1,30 +1,68 @@
 <template>
   <header class="bg-white py-4 shadow-sm fixed w-full top-0 z-50">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-brand-green flex items-center gap-2">
-        <!-- <div class="w-8 h-8 rounded-full border-2 border-blue-500 flex items-center justify-center">
-          <span class="text-blue-500 text-sm">i</span>
-        </div>  -->
-        <span class="text-4xl"><span class="text-brand-blue-origin">inclusiva</span>360</span>
+    <div class="container mx-auto px-4 grid grid-cols-3 md:flex md:justify-between items-center">
+      <div class="md:hidden"></div> <!-- Espaço vazio para grid em mobile -->
+      <div class="text-xl md:text-2xl font-bold text-brand-green flex items-center gap-2 justify-center md:justify-start">
+        <span class="text-3xl md:text-4xl"><span class="text-brand-blue-origin">inclusiva</span>360</span>
       </div>
-      <nav class="hidden md:flex gap-8 text-sm font-semibold text-black">
+      <nav class="hidden md:flex gap-4 md:gap-8 text-sm font-semibold text-black">
         <a href="#"
-          class="text-xl px-3 py-1 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200">
+          class="text-lg md:text-xl px-3 py-1 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200">
           Comunidade
         </a>
         <a href="#"
-          class="text-xl px-3 py-1 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200">
+          class="text-lg md:text-xl px-3 py-1 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200">
           Sobre Nós
         </a>
         <a href="#"
-          class="text-xl px-3 py-1 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200">
+          class="text-lg md:text-xl px-3 py-1 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200">
           Contato
         </a>
       </nav>
-      <button
-        class="bg-brand-green text-white px-6 py-2 rounded-[15px] font-bold hover:bg-green-600 transition shadow-md text-sm px-3 py-1 border-2 border-transparent hover:border-[#ffd700] transition-colors duration-200">
-        <span class="text-xl">Seja um Parceiro!</span>
+      <!-- Mobile menu button -->
+      <button @click="toggleMenu" class="md:hidden text-gray-700 focus:outline-none justify-self-end">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
       </button>
+      <button
+        class="hidden md:block bg-brand-green text-white px-4 md:px-6 py-2 rounded-[15px] font-bold hover:bg-green-600 transition shadow-md text-sm md:text-base">
+        <span class="text-lg md:text-xl">Seja um Parceiro!</span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div v-if="isMenuOpen" class="md:hidden bg-white shadow-lg">
+      <nav class="px-4 py-4 space-y-2 flex flex-col items-center">
+        <a href="#" @click="closeMenu"
+          class="block text-lg px-3 py-2 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200 text-center">
+          Comunidade
+        </a>
+        <a href="#" @click="closeMenu"
+          class="block text-lg px-3 py-2 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200 text-center">
+          Sobre Nós
+        </a>
+        <a href="#" @click="closeMenu"
+          class="block text-lg px-3 py-2 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200 text-center">
+          Contato
+        </a>
+        <button @click="closeMenu"
+          class="w-full max-w-[200px] bg-brand-green text-white px-4 py-2 rounded-[15px] font-bold hover:bg-green-600 transition shadow-md text-lg text-center">
+          Seja um Parceiro!
+        </button>
+      </nav>
     </div>
   </header>
 </template>
+
+<script setup>
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
+const closeMenu = () => {
+  isMenuOpen.value = false
+}
+</script>

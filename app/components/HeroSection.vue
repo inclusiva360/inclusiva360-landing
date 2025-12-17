@@ -4,14 +4,14 @@
       <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h3 class="text-3xl md:text-6xl font-bold text-blue-900 mb-4 uppercase">Sua Experiência Transforma Rotas</h3>
-          <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+          <p class="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed">
             Conte como você se desloca e quais obstáculos encontra - seja pessoas com mobilidade reduzida, quem usa
             cadeira de rodas, acompanhamento, cuidador ou familiar. Suas respostas tornam as rotas mais seguras e úteis
             para toda a comunidade. Privacidade respeitada (LGPD).
           </p>
           <div class="container relative z-10 pt-10 pb-10">
             <button
-              class="bg-brand-green text-white w-[340px] h-[75px] rounded-[15px] font-bold text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
+              class="bg-brand-green text-white w-full max-w-[340px] h-[60px] md:h-[75px] rounded-[15px] font-bold text-xl md:text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
               Seja um Parceiro!
             </button>
           </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="order-1 md:order-2">
           <h3 class="text-3xl md:text-6xl font-bold text-blue-900 mb-4 uppercase">Validação Real, Impacto Prático</h3>
-          <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+          <p class="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed">
             A Inclusiva360 é mais que um app: é um movimento.
             Construída em parceria com universidades, entidades de classe e o poder público, une especialistas em
             tecnologia, engenheiros, voluntários e pessoas com deficiência que trazem suas vivências para dentro do

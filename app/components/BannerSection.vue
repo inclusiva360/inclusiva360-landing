@@ -14,14 +14,14 @@
           ACESSIBILIDADE COM INTELIGÊNCIA.
         </h1>
 
-        <p class="text-gray-600 mb-6 text-2xl leading-relaxed">
+        <p class="text-gray-600 mb-6 text-lg md:text-2xl leading-relaxed">
           App colaborativo para pessoas com mobilidade reduzida e redes de apoio:
           Encontre rotas acessíveis e registre barreiras em tempo real.
         </p>
 
         <div class="container relative z-10 pt-10 pb-10">
           <button
-            class="bg-brand-green text-white w-[340px] h-[75px] rounded-[15px] font-bold text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
+            class="bg-brand-green text-white w-full max-w-[340px] h-[60px] md:h-[75px] rounded-[15px] font-bold text-xl md:text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
             Seja um Parceiro!
           </button>
         </div>
@@ -37,11 +37,11 @@
 
     <!-- Botão Saiba Mais (fixado no final visual) -->
     <div class="container mx-auto px-4 relative z-10 pb-10 flex justify-center">
-      <div
-        class="bg-brand-yellow px-8 py-6 rounded-full font-bold text-xl flex items-center gap-2 cursor-pointer shadow hover:bg-yellow-500 transition-colors">
-        Saiba Mais
+      <a href="#solutions"
+        class="bg-brand-yellow px-8 py-6 rounded-full font-bold text-xl flex items-center gap-2 cursor-pointer shadow hover:bg-yellow-500 transition-colors animate-softPulse">Saiba
+        Mais
         <Icon name="fluent:arrow-down-12-filled" class="text-2xl" />
-      </div>
+      </a>
     </div>
 
   </section>

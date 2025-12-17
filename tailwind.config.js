@@ -11,12 +11,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'brand-green': '#0ca958', // O verde do botão
-        'brand-blue': '#2D4059',  // O azul escuro do rodapé
-        'brand-yellow': '#FACC15', // O amarelo do "Saiba mais"
-        'brand-blue-origin': '#01b0f1' // O amarelo do "Saiba mais"
-      }
+        "brand-green": "#0ca958", // O verde do botão
+        "brand-blue": "#2D4059", // O azul escuro do rodapé
+        "brand-yellow": "#FACC15", // O amarelo do "Saiba mais"
+        "brand-blue-origin": "#01b0f1", // O amarelo do "Saiba mais"
+      },
+      keyframes: {
+        softPulse: {
+          "0%, 100%": { transform: "scale(1)", opacity: "0.95" },
+          "50%": { transform: "scale(1.1)", opacity: "1" },
+        },
+      },
+      animation: {
+        softPulse: "softPulse 4s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
-}
+};
