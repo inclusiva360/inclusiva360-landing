@@ -3,18 +3,19 @@
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h3 class="text-2xl font-bold text-blue-900 mb-4 uppercase">Sua Experiência Transforma Rotas</h3>
-          <p class="text-gray-600 mb-6 leading-relaxed">
-            Cada vez que você avalia um lugar, contribui para um mapa mais completo e acessível. Sua experiência ajuda
-            outras pessoas a saberem onde podem ir com segurança e dignidade.
+          <h3 class="text-3xl md:text-6xl font-bold text-blue-900 mb-4 uppercase">Sua Experiência Transforma Rotas</h3>
+          <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+            Conte como você se desloca e quais obstáculos encontra - seja pessoas com mobilidade reduzida, quem usa
+            cadeira de rodas, acompanhamento, cuidador ou familiar. Suas respostas tornam as rotas mais seguras e úteis
+            para toda a comunidade. Privacidade respeitada (LGPD).
           </p>
-          <button class="bg-brand-green text-white px-6 py-2 rounded-full font-bold text-sm shadow hover:bg-green-600">
+          <button class="bg-brand-green text-white px-12 py-6 rounded-full font-bold text-lg shadow hover:bg-green-600">
             Seja um Parceiro!
           </button>
         </div>
         <div>
-          <img src="https://images.unsplash.com/photo-1564325724739-bae0bd08762c?q=80&w=2070&auto=format&fit=crop"
-            alt="Mulher trabalhando" class="rounded-xl shadow-lg w-full h-80 object-cover" />
+          <img src="~/assets/images/img-1.png" alt="Mulher trabalhando"
+            class="rounded-xl shadow-lg w-full h-95 object-cover" />
         </div>
       </div>
     </section>
@@ -26,13 +27,16 @@
             alt="Colaboração" class="rounded-xl shadow-lg w-full h-80 object-cover" />
         </div>
         <div class="order-1 md:order-2">
-          <h3 class="text-2xl font-bold text-blue-900 mb-4 uppercase">Validação Real, Impacto Prático</h3>
-          <p class="text-gray-600 mb-6 leading-relaxed text-sm">
-            A inclusiva360 não é apenas um app, é um movimento. Tecnologia construída por quem entende as barreiras.
-            Apoiamos empresas e cidades a serem mais inclusivas através de dados reais.
-          </p>
-          <p class="text-gray-500 text-xs italic">
-            Junte-se à nossa comunidade e ajude a transformar a mobilidade urbana.
+          <h3 class="text-3xl md:text-6xl font-bold text-blue-900 mb-4 uppercase">Validação Real, Impacto Prático</h3>
+          <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+            A Inclusiva360 é mais que um app: é um movimento.
+            Construída em parceria com universidades, entidades de classe e o poder público, une especialistas em
+            tecnologia, engenheiros, voluntários e pessoas com deficiência que trazem suas vivências para dentro do
+            projeto.
+            Nosso propósito é simples: usar tecnologia para garantir dignidade e mobilidade. Com o apoio de parceiros
+            estratégicos e princípios sólidos de inclusão e colaboração, estamos criando o primeiro mapa inteligente de
+            acessibilidade do Brasil — e do mundo — que combina IA Assistiva para personalizar a experiência do usuário
+            e uma IA inédita capaz de verificar acessibilidade em imagens públicas e colaborativas.
           </p>
         </div>
       </div>

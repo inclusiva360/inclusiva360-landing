@@ -1,67 +1,55 @@
 <template>
-  <section class="relative pt-52 pb-20 bg-gray-100 overflow-hidden">
-    <div class="absolute inset-0 z-0 opacity-75">
-      <img src="~/assets/images/banner-1.png" class="w-full h-full object-cover object-top" alt="Background" />
+  <section class="relative min-h-screen bg-gray-100 overflow-hidden flex flex-col">
+
+    <!-- Background -->
+    <div class="absolute inset-0 z-0 opacity-65">
+      <img
+        src="~/assets/images/banner-1.png"
+        class="w-full h-full object-cover object-top"
+        alt="Background"
+      />
     </div>
 
-    <div class="container mx-auto px-4 relative z-10 grid md:grid-cols-2 items-center gap-10">
-      <div class="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-xl max-w-lg">
-        <h1 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4 leading-tight">
+    <!-- Conteúdo principal -->
+    <div class="container mx-auto px-4 relative z-10 grid md:grid-cols-2 items-center gap-10 flex-1">
+      <div class="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-xl max-w-4xl">
+        <h1 class="text-3xl md:text-6xl font-extrabold text-blue-900 mb-4 leading-tight">
           MOBILIDADE COM DIGNIDADE, <br />
           ACESSIBILIDADE COM INTELIGÊNCIA.
         </h1>
-        <p class="text-gray-600 mb-6 text-sm leading-relaxed">
-          App colaborativo para pessoas com mobilidade reduzida e redes de apoio: Encontre rotas acessíveis e registre barreiras em tempo real.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 items-start">
-          <button class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:opacity-90">
-            Seja um Parceiro!
-          </button>
-        </div>
-      </div>
 
-      <div class="hidden md:flex justify-center">
-        <div class="w-[32rem] h-[32rem] bg-white rounded-full flex items-center justify-center">
-          <img src="~/assets/images/inclusiva360-logo-centered.png" alt="Logo Inclusiva360"
-            class="w-[22rem] h-[22rem] object-contain" />
-        </div>
-      </div>
-    </div> <!-- Fecha o container grid -->
-
-    <!-- Botão fora do grid, agora centralizado -->
-    <div class="container mx-auto px-4 relative z-10 mt-8 flex justify-center pt-6">
-      <div
-        class="bg-brand-yellow text-black-900 px-8 py-6 rounded-full font-bold text-xl flex items-center justify-center gap-2 cursor-pointer shadow hover:bg-yellow-500 transition-colors">
-        Saiba Mais <Icon name="fluent:arrow-down-12-filled" class="text-2xl" />
-      </div>
-    </div>
-  </section>
-  <!-- <section class="relative w-full min-h-[550px] flex items-center bg-cover bg-center"
-    style="background-image: url('/images/bg-wheelchair.jpg');">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 px-6">
-
-      <div class="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg max-w-xl">
-        <h1 class="text-4xl font-bold text-darkblue">
-          MOBILIDADE COM DIGNIDADE,
-          <br />
-          ACESSIBILIDADE COM INTELIGÊNCIA.
-        </h1>
-
-        <p class="mt-4 text-gray-700">
-          App colaborativo para pessoas com mobilidade reduzida e redes de apoio.
+        <p class="text-gray-600 mb-6 text-xl leading-relaxed">
+          App colaborativo para pessoas com mobilidade reduzida e redes de apoio:
           Encontre rotas acessíveis e registre barreiras em tempo real.
         </p>
 
-        <div class="mt-6 flex gap-4 items-center">
-          <button class="bg-primary text-white px-5 py-3 rounded-lg font-semibold">
-            Seja um Parceiro!
-          </button>
-
-          <p class="text-sm text-gray-600">+100 usuários ativos na plataforma</p>
-        </div>
+        <button
+          class="bg-brand-green text-white px-8 py-3 rounded-full font-bold shadow-lg hover:opacity-90"
+        >
+          Seja um Parceiro!
+        </button>
       </div>
 
-      <img src="../assets/images/inclusiva360-logo.png" class="w-72 md:w-96" alt="Logo">
+      <div class="hidden md:flex justify-center">
+        <div class="w-[42rem] h-[42rem] bg-white rounded-full flex items-center justify-center">
+          <img
+            src="~/assets/images/inclusiva360-logo-centered.png"
+            alt="Logo Inclusiva360"
+            class="w-[30rem] h-[30rem] object-contain"
+          />
+        </div>
+      </div>
     </div>
-  </section> -->
+
+    <!-- Botão Saiba Mais (fixado no final visual) -->
+    <div class="container mx-auto px-4 relative z-10 pb-10 flex justify-center">
+      <div
+        class="bg-brand-yellow px-8 py-6 rounded-full font-bold text-xl flex items-center gap-2 cursor-pointer shadow hover:bg-yellow-500 transition-colors"
+      >
+        Saiba Mais
+        <Icon name="fluent:arrow-down-12-filled" class="text-2xl" />
+      </div>
+    </div>
+
+  </section>
 </template>
