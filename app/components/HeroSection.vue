@@ -9,9 +9,9 @@
             cadeira de rodas, acompanhamento, cuidador ou familiar. Suas respostas tornam as rotas mais seguras e úteis
             para toda a comunidade. Privacidade respeitada (LGPD).
           </p>
-          <div class="container px-4 relative z-10 pb-10 flex">
+          <div class="container relative z-10 pt-10 pb-10">
             <button
-              class="bg-brand-green text-white px-8 py-6 rounded-full font-bold text-xl flex items-center gap-2 cursor-pointer shadow hover:bg-green-600 transition-colors">
+              class="bg-brand-green text-white w-[340px] h-[75px] rounded-[15px] font-bold text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
               Seja um Parceiro!
             </button>
           </div>
@@ -26,8 +26,8 @@
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1">
-          <img src="~/assets/images/img-2.png"
-            alt="Colaboração" class="rounded-xl shadow-lg w-full h-95 object-cover" />
+          <img src="~/assets/images/img-2.png" alt="Colaboração"
+            class="rounded-xl shadow-lg w-full h-95 object-cover" />
         </div>
         <div class="order-1 md:order-2">
           <h3 class="text-3xl md:text-6xl font-bold text-blue-900 mb-4 uppercase">Validação Real, Impacto Prático</h3>

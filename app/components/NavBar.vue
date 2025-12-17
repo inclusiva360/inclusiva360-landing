@@ -22,7 +22,7 @@
         </a>
       </nav>
       <button
-        class="bg-brand-green text-white px-6 py-2 rounded-full font-bold hover:bg-green-600 transition shadow-md text-sm px-3 py-1 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200">
+        class="bg-brand-green text-white px-6 py-2 rounded-[15px] font-bold hover:bg-green-600 transition shadow-md text-sm px-3 py-1 border-2 border-transparent hover:border-[#ffd700] transition-colors duration-200">
         <span class="text-xl">Seja um Parceiro!</span>
       </button>
     </div>

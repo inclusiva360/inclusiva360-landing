@@ -19,9 +19,9 @@
           Encontre rotas acessíveis e registre barreiras em tempo real.
         </p>
 
-        <div class="container px-4 relative z-10 pb-10 flex">
+        <div class="container relative z-10 pt-10 pb-10">
           <button
-            class="bg-brand-green text-white px-8 py-6 rounded-full font-bold text-xl flex items-center gap-2 cursor-pointer shadow hover:bg-green-600 transition-colors">
+            class="bg-brand-green text-white w-[340px] h-[75px] rounded-[15px] font-bold text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
             Seja um Parceiro!
           </button>
         </div>
