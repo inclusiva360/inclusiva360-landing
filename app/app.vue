@@ -18,11 +18,48 @@
     </section>
     <TestimonialsSection></TestimonialsSection>
     <FooterSection></FooterSection>
+
+    <!-- Botão Voltar ao Topo -->
+    <button
+      v-show="showBackToTop"
+      @click="scrollToTop"
+      class="fixed bottom-6 right-8 bg-brand-green hover:bg-green-600 dark:bg-gray-700 dark:hover:bg-gray-600 text-white dark:text-gray-200 p-3 rounded-full shadow-lg transition-all duration-600 z-40"
+      aria-label="Voltar ao topo">
+      <Icon name="fluent:arrow-up-12-filled" class="w-8 h-7" />
+    </button>
   </div>
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
 
+const showBackToTop = ref(false)
+
+const handleScroll = () => {
+  if (process.client) {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+    const halfHeight = window.innerHeight / 2
+    showBackToTop.value = scrollTop > halfHeight
+  }
+}
+
+const scrollToTop = () => {
+  if (process.client) {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+}
+
+onMounted(() => {
+  if (process.client) {
+    window.addEventListener('scroll', handleScroll)
+  }
+})
+
+onUnmounted(() => {
+  if (process.client) {
+    window.removeEventListener('scroll', handleScroll)
+  }
+})
 </script>
 
 <style>

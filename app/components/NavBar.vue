@@ -1,5 +1,10 @@
 <template>
-  <header class="bg-white py-4 shadow-sm fixed w-full top-0 z-50">
+  <!-- Barra de progresso do scroll -->
+  <div class="fixed top-0 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 z-[9999]">
+    <div class="h-full bg-brand-green transition-all duration-300" :style="{ width: scrollProgress + '%' }"></div>
+  </div>
+
+  <header class="bg-white py-4 shadow-sm fixed w-full top-1 z-50">
     <div class="container mx-auto px-4 grid grid-cols-3 md:flex md:justify-between items-center">
       <div class="md:hidden"></div> <!-- Espaço vazio para grid em mobile -->
       <div class="text-xl md:text-2xl font-bold text-brand-green flex items-center gap-2 justify-center md:justify-start">
@@ -56,7 +61,10 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
 const isMenuOpen = ref(false)
+const scrollProgress = ref(0)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -65,4 +73,25 @@ const toggleMenu = () => {
 const closeMenu = () => {
   isMenuOpen.value = false
 }
+
+const handleScroll = () => {
+  if (process.client) {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight
+    scrollProgress.value = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0
+  }
+}
+
+onMounted(() => {
+  if (process.client) {
+    window.addEventListener('scroll', handleScroll)
+    handleScroll() // Initial call
+  }
+})
+
+onUnmounted(() => {
+  if (process.client) {
+    window.removeEventListener('scroll', handleScroll)
+  }
+})
 </script>
