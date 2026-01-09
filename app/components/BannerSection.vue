@@ -22,7 +22,7 @@
         <div class="container relative z-10 pt-6 pb-6">
           <button
             class="bg-brand-green text-white w-full max-w-[340px] h-[60px] md:h-[75px] rounded-[15px] font-bold text-xl md:text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
-            Seja um Parceiro!
+              <NuxtLink to="/form">Seja um Parceiro!</NuxtLink>            
           </button>
         </div>
 

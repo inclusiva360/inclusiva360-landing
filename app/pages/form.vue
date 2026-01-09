@@ -79,8 +79,10 @@
 <script setup>
 import { ref } from 'vue'
 
-const API_KEY = process.env.VUE_FORM_ENDPOINT
-const API_URL = process.env.VUE_API_URL
+const config = useRuntimeConfig()
+
+const API_URL = config.public.apiUrl
+const API_KEY = config.public.apiKey
 const loading = ref(false)
 const status = ref(null)
 
