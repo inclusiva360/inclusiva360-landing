@@ -73,15 +73,16 @@
             </form>
         </section>
 
-        <Footer />
+        <FooterSection />
     </div>
 </template>
+
 <script setup>
+import FooterSection from '~/components/FooterSection.vue'
 import { ref } from 'vue'
 
 const config = useRuntimeConfig()
 
-const API_URL = config.public.apiUrl
 const API_KEY = config.public.apiKey
 const loading = ref(false)
 const status = ref(null)
@@ -100,20 +101,15 @@ const submitForm = async () => {
     status.value = null
 
     try {
-        const response = await fetch(API_URL, {
+        const response = await $fetch('/api/submit-form', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
+            body: {
                 nome: form.value.nome,
                 email: form.value.email,
                 telefone: form.value.telefone,
                 apiKey: API_KEY,
-            }),
+            },
         })
-
-        if (!response.ok) throw new Error('Erro no envio')
 
         status.value = 'success'
 
