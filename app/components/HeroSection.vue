@@ -9,11 +9,10 @@
             cadeira de rodas, acompanhamento, cuidador ou familiar. Suas respostas tornam as rotas mais seguras e úteis
             para toda a comunidade. Privacidade respeitada (LGPD).
           </p>
-          <div class="container relative z-10 pt-10 pb-10">
-            <button
-              class="bg-brand-green text-white w-full max-w-[340px] h-[60px] md:h-[75px] rounded-[15px] font-bold text-xl md:text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
-              Seja um Parceiro!
-            </button>
+          <div class="container relative z-10 pt-10 pb-10 flex justify-center md:justify-start">
+            <NuxtLink to="/form"
+              class="bg-brand-green text-white w-full max-w-[280px] sm:max-w-[320px] md:max-w-[340px] h-[50px] sm:h-[60px] md:h-[75px] rounded-[15px] font-bold text-lg sm:text-xl md:text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
+              Seja um Parceiro!</NuxtLink>
           </div>
         </div>
         <div>
@@ -41,6 +40,11 @@
             acessibilidade do Brasil — e do mundo — que combina IA Assistiva para personalizar a experiência do usuário
             e uma IA inédita capaz de verificar acessibilidade em imagens públicas e colaborativas.
           </p>
+          <div class="container relative z-10 pt-10 pb-10 flex justify-center md:justify-start">
+            <NuxtLink to="/form"
+              class="bg-brand-green text-white w-full max-w-[280px] sm:max-w-[320px] md:max-w-[340px] h-[50px] sm:h-[60px] md:h-[75px] rounded-[15px] font-bold text-lg sm:text-xl md:text-2xl flex items-center justify-center shadow hover:bg-green-600 transition-colors">
+              Seja um Parceiro!</NuxtLink>
+          </div>
         </div>
       </div>
     </section>

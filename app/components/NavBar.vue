@@ -23,7 +23,8 @@
           Sobre Nós
         </a>
         <NuxtLink to="/form"
-          class="text-lg md:text-xl px-3 py-1 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200">Contato</NuxtLink>
+          class="text-lg md:text-xl px-3 py-1 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200">
+          Contato</NuxtLink>
       </nav>
       <!-- Mobile menu button -->
       <button @click="toggleMenu" class="md:hidden text-gray-700 focus:outline-none justify-self-end">
@@ -33,10 +34,9 @@
           <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
-      <button
-        class="hidden md:block bg-brand-green text-white px-4 md:px-6 py-2 rounded-[15px] font-bold hover:bg-green-600 transition shadow-md text-sm md:text-base">
-        <NuxtLink class="text-lg md:text-xl" to="/form">Seja um Parceiro!</NuxtLink>
-      </button>
+      <NuxtLink
+        class="text-lg md:text-xl hidden md:block bg-brand-green text-white px-4 md:px-6 py-2 rounded-[15px] font-bold hover:bg-green-600 transition shadow-md text-sm md:text-base"
+        to="/form">Seja um Parceiro!</NuxtLink>
     </div>
     <!-- Mobile menu -->
     <div v-if="isMenuOpen" class="md:hidden bg-white shadow-lg">
@@ -53,10 +53,10 @@
           class="block text-lg px-3 py-2 border-2 border-transparent rounded-lg hover:border-[#ffd700] transition-colors duration-200 text-center">
           Contato
         </a>
-        <button @click="closeMenu"
-          class="w-full max-w-[200px] bg-brand-green text-white px-4 py-2 rounded-[15px] font-bold hover:bg-green-600 transition shadow-md text-lg text-center">
-          <NuxtLink to="/form">Seja um Parceiro!</NuxtLink>
-        </button>
+
+        <NuxtLink
+          class="w-full max-w-[200px] bg-brand-green text-white px-4 py-2 rounded-[15px] font-bold hover:bg-green-600 transition shadow-md text-lg text-center"
+          to="/form">Seja um Parceiro!</NuxtLink>
       </nav>
     </div>
   </header>
