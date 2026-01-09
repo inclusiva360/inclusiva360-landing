@@ -79,11 +79,8 @@
 <script setup>
 import { ref } from 'vue'
 
-const API_URL =
-    'https://script.google.com/macros/s/AKfycbxiH2N7YJypZU20rvoXZHtX9TaDIx14zdkYRdorlwHgnsk70cohgR7hSePa-4NEVytR7A/exec'
-
 const API_KEY = process.env.VUE_FORM_ENDPOINT
-
+const API_URL = process.env.VUE_API_URL
 const loading = ref(false)
 const status = ref(null)
 
