@@ -105,6 +105,8 @@ const submitForm = async () => {
                 nome: form.value.nome,
                 email: form.value.email,
                 telefone: form.value.telefone,
+                perfil: form.value.perfil,
+                descricao: form.value.descricao,
                 apiKey: API_KEY,
             },
         })
