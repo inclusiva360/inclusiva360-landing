@@ -8,18 +8,18 @@
         </div>
 
         <div class="footer-col">
-            <h4>Páginas</h4>
+            <h4 class="font-bold">Páginas</h4>
             <ul>
-                <li class="active">Home</li>
+                <li>Home</li>
                 <li>Soluções</li>
                 <li>Comunidade</li>
-                <li>Sobre Nós</li>
+                <li class="active">Sobre Nós</li>
                 <li>Contato</li>
             </ul>
         </div>
 
         <div class="footer-col">
-            <h4>Redes Sociais</h4>
+            <h4 class="font-bold">Redes Sociais</h4>
             <div class="socials">
                 <div class="flex justify-center md:justify-start gap-4 text-2xl">
                     <Icon name="mdi:linkedin" class="text-2xl md:text-[60px]" />

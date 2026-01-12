@@ -1,225 +1,257 @@
 <template>
-    <div class="page">
-        <!-- Header -->
-        <NavBar></NavBar>
+    <div>
+        <div class="page">
+            <section class="hero">
+                <div class="container hero-content">
+                    <div class="hero-text">
+                        <h1>
+                            <span class="brand-name">INCLUSIVA360</span> – Mobilidade com dignidade,
+                            acessibilidade com inteligência.
+                        </h1>
+                        <p>
+                            App colaborativo para pessoas com mobilidade reduzida e
+                            redes de apoio. Encontre rotas acessíveis e registre
+                            barreiras em tempo real.
+                        </p>
+                        <NuxtLink to="/form" class="btn-primary">
+                            Quero colaborar</NuxtLink>
+                    </div>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-text">
-                <h1>
-                    <strong>INCLUSIVA360</strong> – Mobilidade com dignidade,
-                    acessibilidade com inteligência.
-                </h1>
-
-                <p>
-                    App colaborativo para pessoas com mobilidade reduzida e
-                    redes de apoio. Encontre rotas acessíveis e registre
-                    barreiras em tempo real.
-                </p>
-
-                <button class="btn-primary">Quero colaborar</button>
-            </div>
-
-            <div class="hero-logo">
-                <img src="~/assets/images/inclusiva360-logo-centered.png" alt="Inclusiva360" />
-            </div>
-        </section>
-
-        <!-- Desafios -->
-        <section class="challenges">
-            <h2>DESAFIOS E COMO RESOLVEMOS</h2>
-            <span class="subtitle">
-                CLIQUE NO DESAFIO PARA DESCOBRIR A SOLUÇÃO
-            </span>
-
-            <div class="cards">
-                <div class="card">
-                    Pessoas com mobilidade reduzida não têm informações confiáveis
-                    sobre acessibilidade urbana.
+                    <div class="hero-logo">
+                        <img src="~/assets/images/inclusiva360-logo-centered.png" alt="Inclusiva360 Logo" />
+                    </div>
                 </div>
+            </section>
 
-                <div class="card">
-                    Apps que ignoram barreiras do mundo real.
+            <section class="challenges">
+                <div class="container">
+                    <h2>DESAFIOS E COMO RESOLVEMOS</h2>
+                    <span class="subtitle">CLIQUE NO DESAFIO PARA DESCOBRIR A SOLUÇÃO</span>
+
+                    <div class="cards">
+                        <div class="card">
+                            <p>Pessoas com mobilidade reduzida não têm informações confiáveis sobre acessibilidade
+                                urbana.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <p>Apps que ignoram barreiras do mundo real.</p>
+                        </div>
+                        <div class="card">
+                            <p>A insegurança de não saber se há rampas, calçadas ou banheiros adaptados gera ansiedade e
+                                limita a autonomia.</p>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <div class="card">
-                    A insegurança de não saber se há rampas, calçadas ou
-                    banheiros adaptados gera ansiedade e limita a autonomia.
+            <section class="experience">
+                <div class="container">
+                    <div class="content-limit">
+                        <h2>SUA EXPERIÊNCIA TRANSFORMA ROTAS</h2>
+                        <p>
+                            Conte como você se desloca e quais obstáculos encontra – seja
+                            pessoas com mobilidade reduzida, quem usa cadeira de rodas,
+                            acompanhamento, cuidador ou familiar. Suas respostas tornam
+                            as rotas mais seguras e úteis para toda a comunidade.
+                        </p>
+                        <p class="lgpd">Privacidade respeitada (LGPD).</p>
+                        <NuxtLink to="/form" class="btn-primary">
+                            Quero colaborar</NuxtLink>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Experiência -->
-        <section class="experience">
-            <h2>SUA EXPERIÊNCIA TRANSFORMA ROTAS</h2>
-
-            <p>
-                Conte como você se desloca e quais obstáculos encontra – seja
-                pessoas com mobilidade reduzida, quem usa cadeira de rodas,
-                acompanhamento, cuidador ou familiar. Suas respostas tornam
-                as rotas mais seguras e úteis para toda a comunidade.
-                <br /><br />
-                Privacidade respeitada (LGPD).
-            </p>
-
-            <button class="btn-primary">Quero colaborar</button>
-        </section>
-
-        <!-- Validação -->
-        <section class="validation">
-            <h2>VALIDAÇÃO REAL, IMPACTO PRÁTICO</h2>
-
-            <p>
-                A Inclusiva360 é mais que um app: é um movimento. Construída
-                em parceria com universidades, entidades de classe e o poder
-                público, une especialistas em tecnologia, engenheiros,
-                voluntários e pessoas com deficiência que trazem suas
-                vivências para dentro do projeto.
-                <br /><br />
-                Nosso propósito é simples: usar tecnologia para garantir
-                dignidade e mobilidade. Com o apoio de parceiros estratégicos
-                e princípios sólidos de inclusão e colaboração, estamos
-                criando o primeiro mapa inteligente de acessibilidade do
-                Brasil – e do mundo – que combina IA Assistiva para
-                personalizar a experiência do usuário e uma IA inédita capaz
-                de verificar acessibilidade em imagens públicas e
-                colaborativas.
-            </p>
-        </section>
-
+            <section class="validation">
+                <div class="container">
+                    <div class="content-limit">
+                        <h2>VALIDAÇÃO REAL, IMPACTO PRÁTICO</h2>
+                        <p>
+                            A Inclusiva360 é mais que um app: é um movimento. Construída
+                            em parceria com universidades, entidades de classe e o poder
+                            público, une especialistas em tecnologia, engenheiros,
+                            voluntários e pessoas com deficiência que trazem suas
+                            vivências para dentro do projeto.
+                        </p>
+                        <br>
+                        <p>
+                            Nosso propósito é simples: usar tecnologia para garantir
+                            dignidade e mobilidade. Com o apoio de parceiros estratégicos
+                            e princípios sólidos de inclusão e colaboração, estamos
+                            criando o primeiro mapa inteligente de acessibilidade do
+                            Brasil – e do mundo – que combina IA Assistiva para
+                            personalizar a experiência do usuário e uma IA inédita capaz
+                            de verificar acessibilidade em imagens públicas e
+                            colaborativas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
         <FooterSectionHero></FooterSectionHero>
     </div>
 </template>
 
 <style scoped>
-/* ===== Base ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+/* ===== Configurações Gerais ===== */
 .page {
-    font-family: 'Inter', system-ui, sans-serif;
-    color: #111;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+    /* Melhorado para leitura */
 }
 
-/* Container padrão */
-section,
-footer {
-    max-width: 1200px;
+.container {
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 80px 24px;
+    padding: 0 24px;
 }
 
-/* ===== Hero ===== */
-.hero {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
+/* Limita a largura do texto nas seções inferiores mas mantém o alinhamento à esquerda do container */
+.content-limit {
+    max-width: 800px;
+}
+
+section {
+    padding: 80px 0;
+    /* Aumentado para dar "respiro" entre seções */
+}
+
+/* ===== Tipografia ===== */
+h1,
+h2 {
+    color: #FF0000;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.brand-name {
+    color: #FF0000;
+    font-weight: 900;
+}
+
+p {
+    font-size: 18px;
+    /* Tamanho adequado para leitura web */
+    color: #444;
+}
+
+/* ===== Hero Section ===== */
+.hero-content {
+    display: flex;
     align-items: center;
-    gap: 64px;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .hero-text {
-    max-width: 520px;
+    flex: 1.2;
 }
 
-.hero h1 {
-    color: #ff2d2d;
-    font-size: 32px;
-    line-height: 1.35;
-}
-
-.hero p {
-    margin: 24px 0 32px;
-    font-size: 16px;
-    line-height: 1.6;
+.hero-text p {
+    margin-bottom: 32px;
 }
 
 .hero-logo {
+    flex: 0.8;
     display: flex;
     justify-content: center;
 }
 
 .hero-logo img {
     width: 100%;
-    max-width: 360px;
+    max-width: 450px;
+    height: auto;
 }
 
-/* ===== Buttons ===== */
+/* ===== Botões ===== */
 .btn-primary {
-    background: linear-gradient(135deg, #ff2d2d, #ff5a5a);
-    color: #fff;
+    background: #FF3B3B;
+    color: white;
     border: none;
-    border-radius: 12px;
-    padding: 14px 32px;
-    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 10px 24px rgba(255, 45, 45, 0.35);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 20px rgba(255, 59, 59, 0.3);
+    transition: transform 0.2s, background 0.2s;
 }
 
 .btn-primary:hover {
+    background: #e60000;
     transform: translateY(-2px);
-    box-shadow: 0 14px 32px rgba(255, 45, 45, 0.45);
 }
 
-.btn-primary.small {
-    padding: 10px 20px;
-    font-size: 14px;
-}
-
-/* ===== Challenges ===== */
-.challenges h2 {
-    color: #ff2d2d;
-    margin-bottom: 8px;
-}
-
+/* ===== Desafios (Cards) ===== */
 .subtitle {
+    display: block;
     font-size: 12px;
-    color: #888;
-    letter-spacing: 0.04em;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
-    margin-top: 40px;
 }
 
 .card {
-    border: 1px solid #ffd1d1;
-    padding: 28px;
-    border-radius: 12px;
-    font-style: italic;
-    line-height: 1.6;
-    background: #fff;
-    min-height: 160px;
+    border: 1px solid #eee;
+    padding: 40px 30px;
+    border-radius: 4px;
+    min-height: 200px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background: #fff;
+    text-align: center;
 }
 
-/* ===== Experience ===== */
-.experience {
-    max-width: 720px;
+.card p {
+    font-style: italic;
+    font-size: 16px;
+    color: #555;
+    margin: 0;
 }
 
-.experience h2 {
-    color: #ff2d2d;
-    margin-bottom: 24px;
+/* ===== Ajustes Específicos ===== */
+.lgpd {
+    font-size: 14px;
+    color: #888;
+    margin: 12px 0 24px;
 }
 
-.experience p {
-    line-height: 1.7;
-    margin-bottom: 32px;
-}
+/* Responsividade */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: left;
+    }
 
-/* ===== Validation ===== */
-.validation {
-    max-width: 900px;
-}
+    .hero-logo img {
+        max-width: 300px;
+    }
 
-.validation h2 {
-    color: #ff2d2d;
-    margin-bottom: 24px;
-}
-
-.validation p {
-    line-height: 1.7;
+    h2 {
+        font-size: 26px;
+    }
 }
 </style>

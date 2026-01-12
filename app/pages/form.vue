@@ -1,7 +1,5 @@
 <template>
     <div class="page">
-        <NavBar />
-
         <section class="form-section">
             <div class="form-header d-flex flex-column align-center mb-8 text-center pt-6">
                 <h1 class="font-extrabold">Sua experiência transforma rotas</h1>
